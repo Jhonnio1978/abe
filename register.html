@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - ABE</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Registro en ABE</h1>
+    </header>
+    <form id="registerForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+        
+        <label for="telefono">Número de Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+        
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" required>
+        
+        <label for="escuela">Escuela:</label>
+        <input type="text" id="escuela" name="escuela" required>
+        
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required>
+        
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required>
+        
+        <label for="tipoCuenta">Tipo de Cuenta:</label>
+        <select id="tipoCuenta" name="tipoCuenta" required>
+            <option value="ahorro">Ahorro</option>
+            <option value="credito">Tarjeta de Crédito/Débito</option>
+            <option value="prestamo">Préstamo</option>
+        </select>
+        
+        <button type="submit">Registrar</button>
+    </form>
+    <footer>
+        <p>Asociación del Banco Estudiantil | WhatsApp: 8293329545</p>
+    </footer>
+    <script src="../js/auth.js"></script>
+</body>
+</html>
